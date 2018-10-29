@@ -1,0 +1,40 @@
+body{
+	font-family: 'Creepster', cursive;
+	color: #ff9a00;
+	background: #000000;
+}
+
+
+.Spooky {
+	width: 625px;
+	height: 600px;
+	margin: 0 auto;
+	
+}
+
+h1 {
+	text-align: center;
+}
+
+h2{
+	text-align: center;
+}
+
+
+img{
+	width:200px;
+	height: 300px;
+
+}
+
+.Light{
+	width: 200px;
+	height: 200px;
+	background: black;
+	margin: 5%;
+	display: inline-block;
+}
+
+#One{
+	margin-left: 18%;
+}

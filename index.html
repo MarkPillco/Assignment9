@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title> Assignment 9 </title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Creepster" rel="stylesheet">
+	
+</head>
+
+<body>
+<h1> Happy Halloween! </h1>
+	<h2> Here are some of the greatest Horror films in celebration of the holiday, and also Jason X in case you need a good laugh! </h2>
+	<h2> Type a keyout for a surprise! (Try using the first letter of each movie for movie specific themes) </h2>
+
+<div class="Spooky">
+	
+<img src="images/Halloween.jpg" alt="Halloween Poster">
+<img src="images/JasonX.jpg" alt="Jason X Poster">
+<img src="images/Silence.jpg" alt="Silence of the Lambs Poster">
+<img src="images/TheShining.jpg" alt="The Shining Poster">
+<img src="images/TheThing.jpeg" alt="The Thing Poster">
+<img src="images/It.jpg" alt="It Poster">
+	
+</div>
+
+
+<script type="text/javascript">
+	var color=0;
+	
+		document.addEventListener("keypress", function(event){
+		console.log(event);
+
+		var key=event.key;
+
+		if(key =='h'){
+			color=45;
+		}
+
+		else if(key=='j'){
+			color=240;
+		}
+
+		else if(key=='l'){
+			color=60;
+		}
+
+		else if(key=='s'){
+			color=2;
+		}
+
+		else if(key=='t'){
+			color=204;
+		}
+
+	else if(key=='i'){
+			color=1;
+		}
+
+
+		
+		var Pictures=document.getElementsByTagName("body");
+
+		for(var i=0; i<Pictures.length; i++){
+			Pictures[i].style.background='hsl('+color+', 100%, 50%)';
+			color+=5;
+		}
+	});
+
+</script>
+
+</body>
+</html>
